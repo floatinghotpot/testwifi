@@ -5,9 +5,18 @@
     },
     "config_munge": {
         "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"WifiAdmin\"><param name=\"android-package\" value=\"com.rjfun.cordova.plugin.WifiAdmin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
             "AndroidManifest.xml": {
                 "parents": {
-                    "/manifest/application": [],
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -31,16 +40,6 @@
                         }
                     ]
                 }
-            },
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"WifiAdmin\"><param name=\"android-package\" value=\"com.rjfun.cordova.plugin.WifiAdmin\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
             }
         }
     },
@@ -48,5 +47,6 @@
         "com.rjfun.cordova.plugin.wifi": {
             "PACKAGE_NAME": "com.rjfun.testwifi"
         }
-    }
+    },
+    "dependent_plugins": {}
 }
