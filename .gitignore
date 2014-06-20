@@ -1,0 +1,18 @@
+# ignore
+# www.default
+platforms/android/local.properties
+platforms/android/gen
+platforms/android/bin
+platforms/android/assets/www
+platforms/android/ant-build
+platforms/android/ant-gen
+platforms/android/CordovaLib/ant-build
+platforms/android/.classpath
+platforms/android/CordovaLib/.classpath
+platforms/android/CordovaLib/bin/
+platforms/ios/build
+platforms/ios/www
+platforms/ios/cordova/console.log
+platforms/ios/TestWifi.xcodeproj/xcuserdata/
+.DS_Store
+
